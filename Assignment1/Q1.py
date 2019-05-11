@@ -1,4 +1,6 @@
 #Author: Manish Puri
+#assignment 1 pull request
+#pull request 1
 
 inp = raw_input()  
 inp2 = eval(raw_input())  
