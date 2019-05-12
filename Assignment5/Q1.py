@@ -52,6 +52,7 @@ def printmaxel(x):
         maxl = 0
         for el in arr:
             if len(el) > maxl:
+                maxl=len(el)
                 maxel = el
         return maxel
 
