@@ -4,7 +4,6 @@ from django.db import models
 
 class Candidate(models.Model):
     Name_of_Can=models.CharField(max_length=100,unique=True)
-
     def __str__(self):
         return self.Name_of_Can
 
@@ -12,7 +11,6 @@ class Candidate(models.Model):
 class CandidateInfo(models.Model):
     CanID=models.ForeignKey(Candidate,on_delete=models.PROTECT)
     CandDept = models.CharField(max_length=150,unique=True)
-
 
 
 class CandidateAddress(models.Model):

@@ -5,5 +5,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 
+
 def index(request):
-    return HttpResponse("Hello Candiates welcome to Consultadd")
+    #return HttpResponse("Hello Candiates welcome to Consultadd")
+    return render(request, 'consultaddfirstproject/index.html')
