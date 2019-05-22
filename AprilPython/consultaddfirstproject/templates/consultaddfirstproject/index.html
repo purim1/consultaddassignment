@@ -1,0 +1,26 @@
+{% load static %}
+
+
+<html>
+<head></head>
+    <body>
+     Hello this is the welcome page for consultadd!
+
+    <img src="{% static 'images/github.png' %}" alt = "OOPS I'm not able to show you the image check your syntax">
+    <link rel = "stylesheet" href="{% static "css/mystyle.css" %}">
+    {{ consultadd }}
+    <li>
+        <a class="nav-link" href= "{% url 'portfolio' %}"> Portfolio </a>
+    </li>
+    <li>
+        <a class="nav-link" href= "{% url 'contact' %}"> Contact </a>
+    </li>
+
+     {% block js %}
+        <script>
+
+        </script>
+    {% endblock js %}
+
+</body>
+</html>
